@@ -1,0 +1,4 @@
+# 📦 Dépendances du projet — Automatisation des Ventes
+# Installer avec : pip install -r requirements.txt
+
+matplotlib>=3.7.0   # Pour les graphiques (Bonus)
