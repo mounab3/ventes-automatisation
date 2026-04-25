@@ -1,10 +1,19 @@
-# 🛒 Automatisation des Ventes — Projet de Fin d'Année
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.14-blue)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Graphiques-orange)
-![CSV](https://img.shields.io/badge/Données-CSV-green)
-![Status](https://img.shields.io/badge/Status-✅%20Terminé-brightgreen)
-![License](https://img.shields.io/badge/License-Academic-lightgray)
+<img src="https://readme-typing-svg.herokuapp.com?font=Georgia&size=32&duration=3000&color=27AE60&center=true&vCenter=true&width=700&lines=🛒+Automatisation+des+Ventes;Projet+de+Fin+d'Année+—+Logiciels;Script+Python+E-Commerce" alt="Titre"/>
+
+<br/>
+
+![Python](https://img.shields.io/badge/Python-3.14-blue?style=for-the-badge&logo=python&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Graphiques-orange?style=for-the-badge)
+![CSV](https://img.shields.io/badge/Données-CSV-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Statut-✅%20Terminé-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Academic-lightgray?style=for-the-badge)
+
+<br/>
+<i>Script Python d'analyse automatique de données e-commerce</i>
+
+</div>
 
 ---
 
@@ -86,17 +95,20 @@ CA TTC   =  CA Net + TVA
 ```
 automatisation-ventes/
 │
-├── analyse_ventes.py       ← Script principal (à lancer)
-├── requirements.txt        ← Dépendances Python
-├── README.md               ← Ce fichier
-├── .gitignore              ← Fichiers exclus de Git
-│
-├── ventes.csv              ← Généré automatiquement par le code
-├── resultats_final.csv     ← Exporté après analyse
-└── graphiques_ventes.png   ← Graphiques Matplotlib
+├── 🐍 analyse_ventes.py       ← Script principal (à lancer)
+├── 📄 requirements.txt        ← Dépendances Python
+├── 📖 README.md               ← Ce fichier
+├── 🔒 .gitignore              ← Fichiers exclus de Git
+└── 📁 photos/                 ← Photos équipe + aperçu graphiques
+    ├── mouna.jpg
+    ├── mariem.jpg
+    ├── chawk.jpg
+    ├── raed.jpg
+    ├── tasnim.jpg
+    └── graphiques.png
 ```
 
-> ⚠️ Les fichiers `ventes.csv`, `resultats_final.csv` et `graphiques_ventes.png` sont **générés automatiquement** — ils ne sont pas inclus dans le dépôt GitHub.
+> ⚠️ Les fichiers `ventes.csv`, `resultats_final.csv` et `graphiques_ventes.png` sont **générés automatiquement** — non inclus dans le dépôt.
 
 ---
 
@@ -111,6 +123,14 @@ automatisation-ventes/
 
 ---
 
+## 📊 Aperçu des graphiques
+
+> Les 3 graphiques sont générés automatiquement au lancement du script.
+
+![Graphiques des ventes](photos/graphiques.png)
+
+---
+
 ## 💡 Exemple de sortie terminal
 
 ```
@@ -119,14 +139,14 @@ automatisation-ventes/
 
 ✅ Fichier 'ventes.csv' généré avec 10 produits.
 
-════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════
   📊  RAPPORT DE VENTES — CHIFFRE D'AFFAIRES
-════════════════════════════════════════════════════════════════════════
-  ID    Prix   Qté  Remise    CA Brut    CA Net      TVA     CA TTC
-────────────────────────────────────────────────────────────────────────
-  101   15.00    3     10%     45.00     40.50      8.10     48.60
-  102   25.00    2      5%     50.00     47.50      9.50     57.00
-════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════
+  ID    Prix   Qté  Remise    CA Brut    CA Net    TVA    CA TTC
+────────────────────────────────────────────────────────────────
+  101   15.00    3     10%     45.00     40.50    8.10    48.60
+  102   25.00    2      5%     50.00     47.50    9.50    57.00
+════════════════════════════════════════════════════════════════
   💰  CA Total (HT) : 1025.60 €
   🏦  TVA collectée :  205.12 €
   🧾  CA Total (TTC): 1230.72 €
@@ -150,15 +170,33 @@ automatisation-ventes/
 
 ---
 
-<div style="background-color:#c8e6c9; padding:15px; border-radius:0px; color:black;">
+<div style="background-color:#c8e6c9; padding:20px; border-radius:0px; color:black;">
   <strong style="font-size:30px;">👥 Équipe</strong>
-  <ul>
-    <li>Mouna Belhiba</li>
-    <li>Mariem Saffar</li>
-    <li>Chawk Mejri</li>
-    <li>Raed Hammouda</li>
-    <li>Tasnim Ben Romdhane </li>
-  </ul>
+  <br/><br/>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="photos/mouna.png" width="80" height="80"/><br/>
+        <b>Mouna Belhiba</b><br/>
+      </td>
+      <td align="center">
+        <img src="photos/mariem.png" width="80" height="80"/><br/>
+        <b>Mariem Saffar</b><br/>
+      </td>
+      <td align="center">
+        <img src="photos/chawk.png" width="80" height="80"/><br/>
+        <b>Chawk Mejri</b><br/>
+      </td>
+      <td align="center">
+        <img src="photos/raed.png" width="80" height="80"/><br/>
+        <b>Raed Hammouda</b><br/>
+      </td>
+      <td align="center">
+        <img src="photos/tasnim.png" width="80" height="80"/><br/>
+        <b>Tasnim Ben Romdhane</b><br/>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -169,3 +207,7 @@ automatisation-ventes/
 </div>
 
 ---
+
+<div align="center">
+<img src="https://img.shields.io/badge/Made%20with-❤️%20&%20Python-red?style=for-the-badge"/>
+</div>
