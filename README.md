@@ -100,11 +100,9 @@ automatisation-ventes/
 ├── 📖 README.md               ← Ce fichier
 ├── 🔒 .gitignore              ← Fichiers exclus de Git
 └── 📁 photos/                 ← Photos équipe + aperçu graphiques
-    ├── mouna.jpg
-    ├── mariem.jpg
-    ├── chawk.jpg
-    ├── raed.jpg
-    ├── tasnim.jpg
+    ├── mouna.png
+    ├── mariem.png
+    ├── chawk.png
     └── graphiques.png
 ```
 
