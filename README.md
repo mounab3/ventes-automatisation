@@ -187,14 +187,6 @@ automatisation-ventes/
         <img src="photos/chawk.png" width="80" height="80"/><br/>
         <b>Chawk Mejri</b><br/>
       </td>
-      <td align="center">
-        <img src="photos/raed.png" width="80" height="80"/><br/>
-        <b>Raed Hammouda</b><br/>
-      </td>
-      <td align="center">
-        <img src="photos/tasnim.png" width="80" height="80"/><br/>
-        <b>Tasnim Ben Romdhane</b><br/>
-      </td>
     </tr>
   </table>
 </div>
@@ -202,7 +194,7 @@ automatisation-ventes/
 ---
 
 <div style="background-color:#eeeeee; padding:15px; border-radius:0px; color:black;">
-  <strong style="font-size:30px;">📄 Licence LMI2</strong>
+  <strong style="font-size:30px;">📄 LMI2</strong>
   <p>Projet académique réalisé dans le cadre du cours <strong>Logiciels</strong> — 2025.</p>
 </div>
 

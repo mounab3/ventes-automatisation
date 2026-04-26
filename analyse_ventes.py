@@ -8,7 +8,7 @@ Ce script Python automatise l'analyse des données de ventes
 d'une entreprise e-commerce. Il lit un fichier CSV, effectue
 des calculs financiers, génère un rapport et des graphiques.
  
-Auteur : Mouna Belhiba, Mariem Saffar, Chawk Mejri, Raed Hammouda
+Auteur : Mouna Belhiba, Mariem Saffar, Chawk Mejri
 Date   : 2025
 """
  
