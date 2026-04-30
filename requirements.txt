@@ -1,4 +1,5 @@
-# 📦 Dépendances du projet — Automatisation des Ventes
-# Installer avec : pip install -r requirements.txt
+# Dépendances requises pour exécuter le script d'analyse des ventes
+# Installez-les avec la commande : pip install -r requirements.txt
 
-matplotlib>=3.7.0   # Pour les graphiques (Bonus)
+pandas>=2.0.0        # Manipulation et analyse des données (DataFrames, CSV)
+matplotlib>=3.7.0    # Génération des graphiques et visualisations
