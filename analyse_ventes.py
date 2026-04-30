@@ -18,7 +18,9 @@ Date   : 2025
 import csv          # Pour lire et écrire des fichiers CSV
 import os           # Pour gérer les fichiers et dossiers
 import sys          # Pour quitter le programme proprement
- 
+import random       # Pour générer des données aléatoires
+import pandas as pd # Pour créer et manipuler les données CSV
+
 # Matplotlib est optionnel — pour les graphiques (Bonus)
 try:
     import matplotlib.pyplot as plt
@@ -28,7 +30,6 @@ except ImportError:
     MATPLOTLIB_AVAILABLE = False
     print("⚠️  matplotlib non installé — graphiques désactivés.")
     print("   Pour l'installer : pip install matplotlib\n")
- 
  
 # ─────────────────────────────────────────────
 #  ⚙️  CONSTANTES GLOBALES
@@ -43,34 +44,32 @@ FICHIER_SORTIE  = "resultats_final.csv"
 # ══════════════════════════════════════════════
 def generer_ventes_csv(chemin: str = FICHIER_ENTREE) -> None:
     """
-    Crée le fichier ventes.csv avec des données d'exemple.
- 
+    Crée le fichier ventes.csv avec 3000 lignes aléatoires.
+
     Chaque ligne représente une vente :
-      - ID       : identifiant unique du produit
-      - Prix     : prix unitaire en euros
-      - Quantite : nombre d'articles vendus
-      - Remise   : réduction appliquée en pourcentage (0–100)
+      - ID       : identifiant unique du produit (commence à 1001)
+      - Prix     : prix unitaire aléatoire entre 5.0 et 500.0 €
+      - Quantite : quantité aléatoire entre 1 et 50
+      - Remise   : remise choisie parmi [0, 5, 10, 15, 20, 25, 30] %
+    
+    Utilise pandas pour créer le fichier CSV proprement.
     """
-    donnees = [
-        # ID     Prix   Qté  Remise
-        [101,   15.0,   3,    10],   # Stylo premium
-        [102,   25.0,   2,     5],   # Carnet A5
-        [103,   10.0,   5,     0],   # Crayon set
-        [104,   80.0,   1,    15],   # Calculatrice
-        [105,   45.0,   4,    20],   # Agenda 2025
-        [106,   12.5,   8,     0],   # Post-it pack
-        [107,  120.0,   2,    10],   # Lampe de bureau
-        [108,   30.0,   3,     5],   # Classeur
-        [109,   55.0,   1,     0],   # Dictionnaire
-        [110,   18.0,   6,    12],   # Règle métallique
-    ]
- 
-    with open(chemin, mode="w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["ID", "Prix", "Quantite", "Remise"])  # En-tête
-        writer.writerows(donnees)
- 
-    print(f"✅ Fichier '{chemin}' généré avec {len(donnees)} produits.\n")
+
+    # ── Génération de 3000 lignes aléatoires ────────────
+    lignes = []
+    for i in range(1, 3001):
+        lignes.append({
+            'ID'      : 1000 + i,                              # ID unique
+            'Prix'    : round(random.uniform(5.0, 500.0), 2),  # Prix aléatoire
+            'Quantite': random.randint(1, 50),                  # Quantité aléatoire
+            'Remise'  : random.choice([0, 5, 10, 15, 20, 25, 30])  # Remise aléatoire
+        })
+
+    # ── Création du fichier CSV avec pandas ─────────────
+    df = pd.DataFrame(lignes)   # Convertit la liste en tableau pandas
+    df.to_csv(chemin, index=False)  # Sauvegarde en CSV sans numéro de ligne
+
+    print(f"✅ Fichier '{chemin}' généré avec {len(lignes)} produits aléatoires.\n")
  
  
 # ══════════════════════════════════════════════
