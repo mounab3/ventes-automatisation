@@ -57,7 +57,7 @@ def generer_ventes_csv(chemin: str = FICHIER_ENTREE) -> None:
 
     # ── Génération de 3000 lignes aléatoires ────────────
     lignes = []
-    for i in range(1, 3001):
+    for i in range(1, 5):
         lignes.append({
             'ID'      : 1000 + i,                              # ID unique
             'Prix'    : round(random.uniform(5.0, 500.0), 2),  # Prix aléatoire
